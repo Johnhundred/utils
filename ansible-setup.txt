@@ -1,0 +1,8 @@
+ssh-keygen
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install -y ansible
+ansible --version
+sudo cp -R /etc/ansible .
+nano ansible.cfg - set inventory to relative path (just hosts)
+nano hosts - add servers (shortnames/IPs, ports if non-standard)
